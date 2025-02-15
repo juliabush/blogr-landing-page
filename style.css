@@ -79,6 +79,7 @@
     color: white;
   }
   .header__red {
+    display: grid;
     background: linear-gradient(hsl(13, 100%, 72%),hsl(353, 100%, 62%)),
               url(images/bg-pattern-intro-mobile.svg);
     background-blend-mode: lighten;
@@ -89,6 +90,23 @@
   }
   .mobile__menu-display {
     display: none;
+  }
+  .active {
+    justify-self: center;
+    color: rgba(1, 1, 44, 0.85);
+    font-weight: 500;
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    background-color: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 100px;
+    font-size: 1.15rem;
   }
   .mobile-menu__logo {
     cursor: pointer;
@@ -136,4 +154,48 @@
     background-color: transparent;
     font-weight: 500;
     color: white;
+  }
+  .mm-sub__display {
+    display: none;
+  }
+  .mm-title__flexbox {
+    display: flex;
+    place-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  hr {
+    opacity: 0.5;
+    margin-bottom: 1.5rem;
+  }
+  .arrow-icon {
+    place-self: center;
+  }
+  .login-button {
+    place-self: center;
+    background-color: transparent;
+    border: transparent;
+    color: inherit;
+  }
+  .signup-button {
+    place-self: center;
+    margin-bottom: 1rem;
+    color: white;
+    font-weight: 700;
+    border: none;
+    background: linear-gradient(to right, hsl(13, 100%, 72%),hsl(353, 100%, 62%));
+  }
+  .mobile-menu-close {
+    position: absolute;
+    place-self: end;
+    padding-right: 1.5rem;
+    top: 50px;
+    visibility: hidden;
+    z-index: 0;
+  }
+  .visible {
+    visibility: visible;
+  }
+  .hidden {
+    visibility: hidden;
   }

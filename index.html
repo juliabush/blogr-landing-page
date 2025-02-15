@@ -18,32 +18,49 @@
     <header class="header__red">
       <div class="header-flexbox__logo">
         <img src="/images/logo.svg" alt="Blogr Logo" class="blogr-logo" width="80px">
-        <img src="/images/icon-hamburger.svg" alt="" class="mobile-menu__logo" height="20px" width="30px">
+        <img src="/images/icon-hamburger.svg" alt="" class="mobile-menu__logo" height="20px" width="30px" id="hamburger-menu">
       </div>
+      <img class="mobile-menu-close" src="images/icon-close.svg" alt="" id="mobile-menu-close">
       <h1 class="header__main-title">A modern publishing platform</h1>
       <p class="header__sub-title">Grow your audience and build your online brand</p>
       <div class="header__button-flexbox">
         <button class="white-button">Start for Free</button>
         <button class="transparent-button">Learn More</button>
       </div>
-      <div class="mobile__menu-display">
-        Product
-        Overview
-        Pricing
-        Marketplace
-        Features
-        Integrations
-        Company
-        About
-        Team
-        Blog
-        Careers
-        Connect
-        Contact
-        Newsletter
-        LinkedIn
-        Login
-        Sign Up
+      <div class="mobile__menu-display" id="mobile-menu">
+        <div class="mm-title__flexbox">
+          <p>Product</p>
+          <img class="arrow-icon" src="/images/icon-arrow-dark.svg" alt="" width="12px" height="8px">
+        </div>
+        <div class="mm-sub__display">
+          Overview
+          Pricing
+          Marketplace
+          Features
+          Integrations
+        </div>
+        <div class="mm-title__flexbox">
+          <p>Company</p>
+          <img class="arrow-icon" src="/images/icon-arrow-dark.svg" alt="" width="12px" height="8px">
+        </div>
+        <div class="mm-sub__display">
+          About
+          Team
+          Blog
+          Careers
+        </div>
+        <div class="mm-title__flexbox">
+          <p>Connect</p>
+          <img class="arrow-icon" src="/images/icon-arrow-dark.svg" alt="" width="12px" height="8px">
+        </div>
+        <div class="mm-sub__display">
+          Contact
+          Newsletter
+          LinkedIn
+        </div>
+        <hr>
+        <button class="login-button">Login</button>
+        <button class="signup-button">Sign Up</button>
       </div>
     </header>
     Designed for the future
