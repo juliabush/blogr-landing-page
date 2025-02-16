@@ -73,10 +73,10 @@
   display: grid;
   }
   body {
-    visibility: hidden;
     font-size: var(--ff-size);
     font-family: var(--ff-main);
     color: white;
+    visibility: visible;
   }
   .header__red {
     display: grid;
@@ -198,4 +198,34 @@
   }
   .hidden {
     visibility: hidden;
+  }
+  .blogr__footer {
+    background-color: var(--clr-Very-dark-black-blue);
+    padding: 4rem;
+    border-top-right-radius: 5rem;
+    text-align: center;
+  }
+  .footer-bold__title {
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  .blogr__footer ul {
+    margin-bottom: 2rem;
+  }
+  .blogr__footer li {
+    margin-bottom: 0.5rem;
+    opacity: 0.7;
+    font-weight: 300;
+  }
+  .blogr-darkbg-lighttext__section {
+    background-color: rgb(59, 59, 90);
+    border-top-right-radius: 5rem;
+  }
+  .big-list {
+    color: var(--clr-Very-dark-grayish-blue);
+  }
+  .footer-logo {
+    place-self: center;
+    width: 95px;
+    margin-bottom: 4rem;
   }
