@@ -193,6 +193,7 @@
     top: 50px;
     visibility: hidden;
     z-index: 0;
+    cursor: pointer;
   }
   .visible {
     visibility: visible;
@@ -222,7 +223,7 @@
     background-color: rgb(59, 59, 90);
     border-top-right-radius: 5rem;
     border-bottom-left-radius: 5rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     background-image: url(/images/bg-pattern-circles.svg);
     background-repeat: no-repeat;
     background-size: 600px;
@@ -296,4 +297,27 @@
   }
   .big-gap {
     padding-bottom: 40%;
+  }
+  @media(min-width:360px) and (max-width:420px) {
+    .multiple-phones__image {
+      max-width: 360px;
+      left: 5%;
+    }
+  }
+  @media(min-width:420px) and (max-width:580px) {
+    .multiple-phones__image {
+      max-width: 70%;
+      left: 16%;
+      bottom: 60%;
+    }
+  }
+  @media(min-width:580px) and (max-width:900px) {
+    .multiple-phones__image {
+      max-width: 70%;
+      left: 16%;
+      bottom: 50%;
+    }
+    .big-gap {
+      padding-bottom: 50%;
+    }
   }

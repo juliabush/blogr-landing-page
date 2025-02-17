@@ -8,5 +8,7 @@ hamburgerMenuButton.addEventListener("click", () => {
     mobileMenuClose.classList.toggle("visible");
 });
 mobileMenuClose.addEventListener("click", () => {
-    location.reload();
+    mobileMenuDisplay.classList.remove("active");
+    hamburgerMenuButton.classList.remove("hidden");
+    mobileMenuClose.classList.remove("visible");
 });
